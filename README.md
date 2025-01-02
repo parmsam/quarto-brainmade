@@ -27,16 +27,16 @@ Or the following shortcode for the brainmade light mark:
 
 The width or height of the mark can be adjusted by passing a width or height parameter:
 
-``` markdown
+```
 {{< brainmade-dark width="52px">}}
 {{< brainmade-dark height="52px">}}
 ```
 
 You can also add small button versions of the marks:
 
-``` markdown
-  {{{< brainmade-dark-btn >}}}
-  {{{< brainmade-light-btn >}}}
+```
+{{< brainmade-dark-btn >}}
+{{< brainmade-light-btn >}}
 ```
 
 ## Example

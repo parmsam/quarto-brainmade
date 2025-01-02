@@ -56,4 +56,6 @@ You can also add small button versions of the marks.
 {{< brainmade-dark-btn >}}
 {{< brainmade-light-btn >}}
 
+## README
 
+Check out the README in the [Github Repo](https://github.com/parmsam/quarto-brainmade) for installation instructions.
