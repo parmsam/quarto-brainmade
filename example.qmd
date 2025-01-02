@@ -1,11 +1,59 @@
 ---
 title: "Brainmade Example"
-filters:
-  - brainmade
+brainmade:
+  type: "light"
+format:
+  html:
+    theme:
+      dark: darkly
 ---
 
-## Heading
+## Usage
 
-This filter adds formatting to heading text.
+This shortcode adds the [Brainmade](https://brainmade.org/) mark to a Quarto document. The Brainmade mark was designed by [Tristram Oaten](https://github.com/0atman), also known as [No Boilerplate](https://www.youtube.com/c/NoBoilerplate). It promotes authorship transparency. The extension provides a dark and light version of the mark which can be specified in the shortcode anywhere in your HTML page. Click the top right button to switch between light and dark mode for the Quarto doc.
+
+## Dark and Light Marks
+
+Here's what the dark mark looks like:
+
+``` markdown
+  {{{< brainmade-dark >}}}
+```
+
+{{< brainmade-dark >}}
+
+And here's the light mark:
+
+``` markdown
+  {{{< brainmade-light >}}}
+```
+
+{{< brainmade-light >}}
+
+The width or height of the mark can be adjusted by passing a width or height parameter.
+
+``` markdown
+  {{{< brainmade-dark width="52px">}}}
+```
+
+{{< brainmade-dark width="52px">}}
+
+``` markdown
+  {{{< brainmade-dark height="52px">}}}
+```
+
+{{< brainmade-dark height="52px">}}
+
+## Buttons
+
+You can also add small button versions of the marks.
+
+``` markdown
+  {{{< brainmade-dark-btn >}}}
+  {{{< brainmade-light-btn >}}}
+```
+
+{{< brainmade-dark-btn >}}
+{{< brainmade-light-btn >}}
 
 

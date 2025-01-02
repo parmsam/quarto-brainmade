@@ -1,0 +1,9 @@
+*.html
+*.pdf
+*_files/
+/.luarc.json
+example_files
+/88x31-dark.png
+/88x31-light.png
+/black-logo.svg
+/white-logo.svg
