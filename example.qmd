@@ -1,0 +1,11 @@
+---
+title: "Brainmade Example"
+filters:
+  - brainmade
+---
+
+## Heading
+
+This filter adds formatting to heading text.
+
+
