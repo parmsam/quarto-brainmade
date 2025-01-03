@@ -79,7 +79,7 @@ return {
     -- local ref_image = www_dir .. "/88x31-light.png"
     -- local ref_image = "_extensions/brainmade/www/88x31-light.png"
         -- quarto.doc.add_format_resource("www/" .. ref_image)
-    local ref_image = quarto.utils.resolve_path("www/88x31-light.svg")
+    local ref_image = quarto.utils.resolve_path("www/88x31-light.png")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0)
     if quarto.doc.is_format("html:js") then
       return pandoc.RawBlock(
@@ -97,7 +97,7 @@ return {
     -- local ref_image = www_dir .. "/88x31-dark.png"
     -- local ref_image = "_extensions/brainmade/www/88x31-dark.png"
         -- quarto.doc.add_format_resource("www/" .. ref_image)
-    local ref_image = quarto.utils.resolve_path("www/88x31-dark.svg")
+    local ref_image = quarto.utils.resolve_path("www/88x31-dark.png")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0)
     if quarto.doc.is_format("html:js") then
       return pandoc.RawBlock(
