@@ -18,11 +18,6 @@ end
 return {
   ['brainmade-light'] = function(args, kwargs, meta)
     add_html_dependencies()
-    -- www_dir = quarto.utils.resolve_path("www")
-    -- local ref_image = www_dir .. "/white-logo.svg"
-    -- quarto.log.output(ref_image)
-    -- local ref_image = "_extensions/brainmade/www/white-logo.svg"
-    -- quarto.doc.add_format_resource("www/" .. ref_image)
     local ref_image = quarto.utils.resolve_path("www/white-logo.svg")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0 )
     local attributes = ""
@@ -47,10 +42,6 @@ return {
   end,
   ['brainmade-dark'] = function(args, kwargs, meta)
     add_html_dependencies()
-    -- www_dir = quarto.utils.resolve_path("www")
-    -- local ref_image = www_dir .. "/black-logo.svg"
-    -- local ref_image = "_extensions/brainmade/www/black-logo.svg"
-    -- quarto.doc.add_format_resource("www/" .. ref_image)
     local ref_image = quarto.utils.resolve_path("www/black-logo.svg")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0)
     local attributes = ""
@@ -75,10 +66,6 @@ return {
   end,
   ['brainmade-light-btn'] = function(args, kwargs, meta)
     add_html_dependencies()
-    -- www_dir = quarto.utils.resolve_path("www")
-    -- local ref_image = www_dir .. "/88x31-light.png"
-    -- local ref_image = "_extensions/brainmade/www/88x31-light.png"
-        -- quarto.doc.add_format_resource("www/" .. ref_image)
     local ref_image = quarto.utils.resolve_path("www/88x31-light.png")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0)
     if quarto.doc.is_format("html:js") then
@@ -93,10 +80,6 @@ return {
   end,
   ['brainmade-dark-btn'] = function(args, kwargs, meta)
     add_html_dependencies()
-    -- www_dir = quarto.utils.resolve_path("www")
-    -- local ref_image = www_dir .. "/88x31-dark.png"
-    -- local ref_image = "_extensions/brainmade/www/88x31-dark.png"
-        -- quarto.doc.add_format_resource("www/" .. ref_image)
     local ref_image = quarto.utils.resolve_path("www/88x31-dark.png")
     ref_image = string.sub(ref_image, string.find(ref_image, "_extensions/") + 0)
     if quarto.doc.is_format("html:js") then
